@@ -14,4 +14,7 @@ public class HanoiRhymer extends defaultCountingOutRhymer {
 	else
 		super.countIn(in);
 	}
+
+	//Skróty alt + left/right w Intellij pozwalają na przechodzenie między otwartymi kartami.
+	//Dla Eclipse pozwalają na poruszanie się między pozycjami w których był kursor
 }
