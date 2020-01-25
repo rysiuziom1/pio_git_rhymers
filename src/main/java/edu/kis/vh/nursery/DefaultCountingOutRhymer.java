@@ -4,7 +4,7 @@ public class DefaultCountingOutRhymer {
 
 	private static final int MAX_SIZE = 12;
 	private static final int UNDERFLOW_LIMIT = -1;
-
+	private static final int ERROR = -1;
 	private int[] numbers = new int[MAX_SIZE];
 
 	public int total = -1;
@@ -24,13 +24,13 @@ public class DefaultCountingOutRhymer {
 
 	protected int peekaboo() {
 		if (callCheck())
-			return UNDERFLOW_LIMIT;
+			return ERROR;
 		return numbers[total];
 	}
 
 	public int countOut() {
 		if (callCheck())
-			return UNDERFLOW_LIMIT;
+			return ERROR;
 		return numbers[total--];
 	}
 
